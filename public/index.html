@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CIB - URL Shortener</title>
+</head>
+<body>
+    <main id="app" v-cloak>
+        <div class="container">
+            <h1 class="header">Coderinblack’s URL Shortner</h1>
+            <h3>🎖🌈🦄 Serving the community since 2020</h3>
+            <form @submit.prevent="createUrl()" v-if="!success">
+                <div v-if="error.message" class="alert">{{ error.message }}</div>
+                <label for="name">🔒 https://cib.now.sh/</label>
+                <input type="text" name="name" id="name" placeholder="example" v-model="name"><br>
+                <label for="link">🌊 Redirect User to &nbsp;&nbsp;</label>
+                <input type="url" name="link" id="link" v-model="link" placeholder="https://example.com" required><br>
+                <button>Create Link</button>
+            </form>
+            <div v-if="success">
+                <a :href="'/'+success.name" class="success-link">
+                    https://cib.now.sh/{{ success.name }}
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

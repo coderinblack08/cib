@@ -1,0 +1,37 @@
+{
+  "name": "cib",
+  "version": "1.0.0",
+  "description": "A simple URL shortener",
+  "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cib"
+  },
+  "keywords": [
+    "url",
+    "shortener",
+    "mongodb",
+    "vue-cdn"
+  ],
+  "author": "coderinblack",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "monk": "^7.3.0",
+    "nanoid": "^3.1.9",
+    "volleyball": "^1.5.1"
+  }
+}

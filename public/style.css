@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina&family=Source+Code+Pro:wght@400;700&display=swap');
+* {
+    margin: 0;
+    font-family: 'Rufina';
+}
+[v-cloak] { display:none; }
+.container {
+    text-align: center;
+    margin-top: 16vh;
+}
+.alert {
+    font-family: 'Source Code Pro';
+    padding: 0.8em 0.5em;
+    margin: 1.5em auto;
+    background-color: rgb(255, 84, 84);
+    border: rgb(231, 0, 0) 1px solid;
+    color: #fff;
+    border-radius: 5px;
+    width: 50%;
+}
+.success-link {
+    font-size: 3.2rem;
+    line-height: 8rem;
+    font-weight: bold;
+    color: rgb(0, 147, 245);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.header {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+h3 {
+    font-weight: 200;
+    font-family: 'Source Code Pro';
+    font-size: 1.4rem;
+    margin-bottom: 2.2em;
+}
+label {
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-right: .5rem;
+}
+input {
+    padding: .5em .8em;
+    margin: .8em;
+    width: 30%;
+    background: #F3F3F3;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+button {
+    cursor: pointer;
+    outline: 0;
+    margin: 1.2em 0;
+    padding: .6em 1em;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Source Code Pro';
+    background: #00A672;
+    box-shadow: 0px 4px 0px #008A5F;
+    border-radius: 5px;
+}
