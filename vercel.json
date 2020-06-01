@@ -1,5 +1,0 @@
-{
-    "env": {
-        "MONGODB_URI": "@cib-mongodb-uri"
-    }
-}

@@ -1,5 +1,5 @@
 const monk = require('monk');
-const MOGODB_URI = process.env.MONGODB_URI;
-const db = monk(MOGODB_URI);
+const MONGODB_URI = process.env.MONGODB_URI;
+const db = monk(MONGODB_URI);
 
 module.exports = db;

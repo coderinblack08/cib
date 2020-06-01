@@ -13,9 +13,9 @@
             <h3>🎖🌈🦄 Serving the community since 2020</h3>
             <form @submit.prevent="createUrl()" v-if="!success">
                 <div v-if="error.message" class="alert">{{ error.message }}</div>
-                <label for="name">🔒 https://cib.now.sh/</label>
+                <label for="name">🔒 https://cib.herokuapp.com/</label>
                 <input type="text" name="name" id="name" placeholder="example" v-model="name"><br>
-                <label for="link">🌊 Redirect User to &nbsp;&nbsp;</label>
+                <label for="link">🌊 Redirect User to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input type="url" name="link" id="link" v-model="link" placeholder="https://example.com" required><br>
                 <button>Create Link</button>
             </form>
@@ -26,7 +26,7 @@
             </div>
         </div>
     </main>
-    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="./script.js"></script>
 </body>
 </html>
