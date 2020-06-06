@@ -7,31 +7,27 @@ new Vue({
         success: ''
     },
     methods: {
-        createUrl() {
+        async createUrl() {
             const body = {
                 name: this.name,
                 link: this.link
             };
-            console.log(body);
-            fetch('/', {
+            const result = await fetch('/', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
                 },
                 body: JSON.stringify(body)
-            })
-            .then(result => result.json())
-            .then(response => {
-                console.log(response);
-                if (response.isError) {
-                    this.error = response;
-                    this.success = '';
-                }
-                else {
-                    this.success = response;
-                    this.error = '';
-                }
             });
+            const response = await result.json();
+            if (response.isError) {
+                this.error = response;
+                this.success = '';
+            }
+            else {
+                this.success = response;
+                this.error = '';
+            }
         }
     }
 });
